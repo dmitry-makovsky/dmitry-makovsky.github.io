@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import OpenApiConverter from "../components/OpenApiConverter.tsx";
+import Title from "../components/ui/Title.astro";
+import BackToHomepage from "../components/ui/BackToHomepage.astro";
+---
+
+<Layout>
+  <BackToHomepage />
+  <Title>Convert OpenAPI to Markdown online</Title>
+  <p class="text-gray-600 mb-6">
+    OpenAPI (v2/v3) to Markdown online converter. Safe. Client-side only.
+  </p>
+  <OpenApiConverter client:load />
+</Layout>
